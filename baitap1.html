@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf8">
+
+    <!-- Title tag -->
+    <title>bai tap 1</title>
+
+</head>
+
+<body>
+    <div id="baitap1">
+
+    </div>
+    <script>
+        // tao label
+        let lable = document.createElement("lable");
+        lable.innerText = "Nhập nội dung tìm kiếm";
+
+        //tao the input
+        let input = document.createElement("input");
+        input.setAttribute("type", "text");
+
+        //tao the link a
+        let linkElement = document.createElement("a");
+        linkElement.href = "#";
+        linkElement.innerHTML = "Ẩn tìm kiếm nâng cao";
+
+        //tao the br1
+        let br1 = document.createElement("br");
+
+        // Tạo phần tử select 
+        let select = document.createElement("select");
+
+        //tao option trong select
+        let option1 = document.createElement("option");
+        option1.innerText = "Quan Ao";
+        option1.value = "SP01";
+
+        let option2 = document.createElement("option");
+        option2.innerText = "Giay dep";
+        option2.value = "SP02";
+
+        let option3 = document.createElement("option");
+        option3.innerText = "Nu trang";
+        option3.value = "SP03";
+
+        // Thêm các tùy chọn vào phần tử <select>
+        select.appendChild(option1);
+        select.appendChild(option2);
+        select.appendChild(option3);
+
+        //tao the br
+        let br2=document.createElement("br");
+      
+        //tao button tim kiem
+        let buttonSearch=document.createElement("button");
+        buttonSearch.innerText="Tim kiem";
+
+
+
+        // Gắn  vào trang
+        let baitap1 = document.getElementById("baitap1");
+        baitap1.appendChild(lable);
+        baitap1.appendChild(input);
+        baitap1.appendChild(linkElement);
+        baitap1.appendChild(br1);
+        baitap1.appendChild(select);
+        baitap1.appendChild(br2);
+        baitap1.appendChild(buttonSearch);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
